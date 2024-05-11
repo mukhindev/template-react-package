@@ -1,0 +1,41 @@
+{
+  "name": "@mukhindev/package",
+  "version": "1.0.0",
+  "author": "Sergey Mukhin",
+  "description": "Package description",
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rimraf ./dist && npx tsc && node ./transfer.js",
+    "publish": "npm run build && npm publish --access public",
+    "link": "npm link"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "stylelint": "^16.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "typescript": "^5.2.2"
+  }
+}
