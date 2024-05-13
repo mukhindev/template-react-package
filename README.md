@@ -6,7 +6,7 @@ Demo: https://github.com/mukhindev/...
 
 ## Install
 
-⚠️ Dependencies: Need support for CSS modules in your configuration. 
+⚠️ Dependencies: Your project need work with CSS modules.
 
 ```
 npm install @mukhindev/...

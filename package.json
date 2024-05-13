@@ -21,7 +21,6 @@
   },
   "scripts": {
     "build": "rimraf ./dist && npx tsc && node ./transfer.js",
-    "publish": "npm run build && npm publish --access public",
     "link": "npm link"
   },
   "peerDependencies": {
